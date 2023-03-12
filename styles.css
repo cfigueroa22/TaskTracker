@@ -196,6 +196,9 @@ textarea:focus {
   cursor: pointer;
 }
 
+.notes {
+}
+
 /*! TABLET SECTION  */
 
 @media screen and (max-width: 960px) {
