@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="/app.js" defer></script>
   </head>
@@ -19,7 +25,7 @@
         </div>
         <ul class="navbar-menu">
           <li class="navbar-item">
-            <a href="/" class="navbar-links">Home</a>
+            <a href="/" class="navbar-links">Legend</a>
           </li>
           <li class="navbar-item">
             <a href="/" class="navbar-links">Contact</a>
@@ -50,6 +56,14 @@
           <div class="priority-title">
             <label for="priority">Priority:</label>
           </div>
+          <div class="urgent">
+            <input
+              type="checkbox"
+              id="urgent-priority"
+              name="urgent-priority"
+            />
+            <label for="urgent-priority">Urgent Priority</label>
+          </div>
           <div class="high">
             <input type="checkbox" id="high-priority" name="high-priority" />
             <label for="high-priority">High Priority</label>
@@ -66,14 +80,7 @@
             <input type="checkbox" id="low-priority" name="low-priority" />
             <label for="low-priority">Low Priority</label>
           </div>
-          <div class="urgent">
-            <input
-              type="checkbox"
-              id="urgent-priority"
-              name="urgent-priority"
-            />
-            <label for="urgent-priority">Urgent Priority</label>
-          </div>
+
           <div class="optional">
             <input
               type="checkbox"
@@ -81,6 +88,9 @@
               name="optional-priority"
             />
             <label for="optional-priority">Optional Priority</label>
+          </div>
+          <div class="submit-button">
+            <button>Submit</button>
           </div>
         </div>
       </div>

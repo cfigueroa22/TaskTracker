@@ -2,14 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #dce2bd;
 }
 
 body {
-  background-color: #f4f4f2;
+  font-family: "Lato", sans-serif;
 }
 
 .navbar {
-  background-color: #f9f6f7;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-links {
-  color: #495464;
+  color: #02111b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-links:hover {
-  color: #929aab;
+  color: #de6449;
   transition: all 0.3s ease;
 }
 
@@ -59,42 +59,141 @@ body {
   margin: auto;
 }
 
+input[type="text"] {
+  padding: 8px;
+  background-color: #dce2bd;
+  border: 2px solid #de6449;
+  border-radius: 5px;
+  width: 300px;
+}
+
+input::placeholder {
+  color: #02111b;
+  /* font-size: 1.2rem; */
+}
+
+input:focus {
+  border: 2px solid;
+  border-color: #de6449;
+  outline: 0 none;
+}
+
+textarea {
+  padding: 5px 5px 0 5px;
+  background-color: #dce2bd;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: #de6449;
+  width: 300px;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #02111b;
+  /* font-size: 1.5rem; */
+  font-family: "Lato", sans-serif;
+  top: 0;
+}
+
+textarea:focus {
+  border: 2px solid;
+  border-color: #de6449;
+  outline: 0 none;
+}
+
 .task-title {
   margin: auto;
+  padding: 2rem 0;
+  grid-area: task-title;
 }
 
 .task-body {
   margin: auto;
+  padding: 0 0 2rem 0;
+  grid-area: task-body;
 }
 
 .priority-section {
   margin: auto;
   display: grid;
-  grid-template-areas: "title" "high" "medium" "low" "urgent" "optional";
+  grid-area: priority;
+  grid-template-areas: "title" "urgent" "medium" "low" "high" "optional" "button";
 }
 
 .priority-title {
   grid-area: title;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.priority-title label {
+  font-size: 1.2rem;
 }
 
 .high {
   grid-area: high;
+  margin-bottom: 1rem;
+}
+
+.high label {
+  background-color: #ffb347;
 }
 
 .medium {
   grid-area: medium;
+  margin-bottom: 1rem;
+}
+
+.medium label {
+  background-color: #fde74c;
 }
 
 .low {
   grid-area: low;
+  margin-bottom: 1rem;
+}
+
+.low label {
+  background-color: #aec6cf;
 }
 
 .urgent {
   grid-area: urgent;
+  margin-bottom: 1rem;
+}
+
+.urgent label {
+  background-color: #ff6961;
 }
 
 .optional {
   grid-area: optional;
+  margin-bottom: 2rem;
+}
+
+.optional label {
+  background-color: #d3d3d3;
+}
+
+.submit-button {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button button {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #de6449;
+  color: #fff;
+  border: none;
+}
+
+.submit-button button:hover {
+  background-color: #ff6961;
+  cursor: pointer;
 }
 
 /*! TABLET SECTION  */
