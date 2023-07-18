@@ -4,38 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Tracker</title>
+    <title>TaskHub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Carlito:wght@400;700&family=Solitreo&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="/app.js" defer></script>
   </head>
-  <body>
-    <div class="navbar">
-      <div class="navbar-container">
-        <a href="" class="navbar-logo"></a>
-        <div class="navbar-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar-menu">
-          <li class="navbar-item">
-            <a href="/" class="navbar-links">Legend</a>
-          </li>
-          <li class="navbar-item">
-            <a href="/" class="navbar-links">Contact</a>
-          </li>
-          <li class="navbar-item">
-            <a href="/" class="navbar-links">Sign Up</a>
-          </li>
-        </ul>
-      </div>
+  <header>
+    <div class="top">
+      <img src="/images/notebook-icon.png" alt="" />
+      <p>TaskHub</p>
     </div>
+  </header>
+  <body>
     <div class="main-section">
       <div class="input-section">
         <div class="task-title">
@@ -47,7 +32,7 @@
           <textarea
             name="text-body"
             id="text-body"
-            placeholder="Task"
+            placeholder="Enter Task"
             cols="30"
             rows="10"
           ></textarea>
@@ -90,11 +75,12 @@
             <label for="optional-priority">Optional Priority</label>
           </div>
           <div class="submit-button">
-            <button>Submit</button>
+            <button type="submit">Save Task</button>
           </div>
         </div>
         <ul class="notes"></ul>
       </div>
     </div>
   </body>
+  <footer>&copy; Carlos Figueroa</footer>
 </html>
