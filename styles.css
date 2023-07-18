@@ -7,6 +7,7 @@
 body {
   background-color: #fcf8fa;
   font-family: "Carlito", sans-serif;
+  min-height: 100vh;
 }
 
 /* Header */
@@ -270,19 +271,21 @@ textarea:focus {
 /* Footer */
 
 footer {
-  position: absolute;
   display: flex;
   bottom: 0;
   width: 100%;
-  height: 5cqb;
+  height: 2.5rem;
   justify-content: center;
   background-color: #449c76;
   align-items: center;
+  position: sticky;
+  top: 100%;
+  margin-top: 2rem;
 }
 
 /*! TABLET SECTION  */
 
-@media screen and (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -357,21 +360,32 @@ footer {
     height: 80px;
     margin: 0;
   }
+}
 
-  .navbar-toggle .bar {
-    display: block;
-    cursor: pointer;
+/* Mobile */
+
+@media (max-width: 767px) {
+  .tasks {
+    flex-direction: column;
   }
 
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity: 0;
+  .msg-title {
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  .buttons-check {
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  .buttons-check button {
+    margin-right: 0;
+    font-size: 0.8rem;
+  }
+
+  .buttons-check input {
+    width: 10%;
   }
 }
