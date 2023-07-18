@@ -60,7 +60,7 @@ function createTaskElement(task, index) {
   listItem.classList.add("tasks");
   listItem.innerHTML = `
       <div class="msg-title">
-        <h3>${task.title}-</h3>
+        <h3>${task.title} -</h3>
         <p>${task.message}</p>
       </div>
       <div class="buttons-check">
